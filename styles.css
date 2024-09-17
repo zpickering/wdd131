@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(112, 12, 12);
+    font-size: 20px;
+    margin: 0;
+}
+main{
+    background-color: red;
+    height: 100vh;
+}
