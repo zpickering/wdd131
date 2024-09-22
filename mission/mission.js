@@ -1,4 +1,4 @@
-// Select the dropdown element from the HTML
+
 const themeSelector = document.querySelector('#theme-selector');
 
 // Function to change the theme
@@ -16,7 +16,7 @@ function changeTheme() {
         // Remove the dark class from the body
         body.classList.remove('dark');
         // Change the source of the logo to the blue logo
-        logo.src = 'byui-logo_blue.png'; // Path to the blue logo
+        logo.src = 'byui-logo_blue.webp'; // Path to the blue logo
     }
 }
 

@@ -26,6 +26,9 @@ main{
 .dark h3{
     color: rgb(79, 154, 207);
 }
-.dark{
+.dark div{
     background-color: #333;
+}
+.dark{
+    color: rgb(212, 212, 212);
 }
