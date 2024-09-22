@@ -13,6 +13,9 @@ div{
 p{
     text-align: left;
 }
+li{
+    text-align: left;
+}
 header{
     letter-spacing: 2px;
     text-transform: uppercase;
