@@ -1,0 +1,31 @@
+h3{
+    color: #006EB6;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+div{
+    text-align: center;
+    width: 600px;
+    line-height: 1.5;
+    margin: auto;
+    border: 1px solid black;
+}
+p{
+    text-align: left;
+}
+header{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+img{
+    width: 150px;
+}
+main{
+    margin: 50px;
+}
+.dark h3{
+    color: rgb(79, 154, 207);
+}
+.dark{
+    background-color: #333;
+}
