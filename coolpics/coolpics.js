@@ -42,9 +42,9 @@ function viewHandler(event) {
   const fullImgSrc = `${imgSrcParts[0]}-full.jpeg`;
 
   // Insert the viewerTemplate into the top of the body element
-  const altText = clickedElement.getAttribute('alt'); // Get alt text from the clicked image
+  const altText = clickedElement.getAttribute('alt'); 
   const modalHTML = viewerTemplate(fullImgSrc, altText);
-  document.body.insertAdjacentHTML('afterbegin', modalHTML); // Insert the modal at the top of the body
+  document.body.insertAdjacentHTML('afterbegin', modalHTML);
 
   //Add a listener to the close button (X) that calls a function called closeViewer when clicked
   const closeButton = document.querySelector('.close-viewer');
@@ -54,7 +54,7 @@ function viewHandler(event) {
 function closeViewer() {
   const viewer = document.querySelector('.viewer');
   if (viewer) {
-    viewer.remove();  // Remove the viewer div
+    viewer.remove();
   }
 }
 
