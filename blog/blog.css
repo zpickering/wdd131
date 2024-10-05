@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto auto;
+    font-family: Lora, Impact, serif;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 0;                
+    background-color: rgb(78, 209, 226);
+    color: black;           
+    padding: 10px;          
+    text-decoration: none;  
+}
+
+.skiptocontent a:focus {
+    top: 0;                 
+    z-index: 100;           
+}
+
+.pageTitle {
+    justify-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgb(141, 7, 7);
+    border-bottom: 1px solid rgb(141, 7, 7);
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar nav a {
+    text-justify: left;
+    color: rgb(141, 7, 7);
+    font-size: 22px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100%;
+}
+
+.bookArea {
+    display: grid; /* Set as grid container */
+    gap: 20px; /* Space between book rows */
+}
+
+.bookRow {
+    display: grid; /* Create a grid for each book */
+    grid-template-columns: 1fr 2fr; /* Two columns: info and book */
+    align-items: start; /* Align items at the top */
+}
+
+.info {
+    border-right: 1px solid rgb(141, 7, 7); /* Add border to the right of info */
+    padding-right: 20px; /* Add padding to the right */
+    text-align: end;
+    height: 100%;
+    
+}
+
+.date {
+    font-size: large;
+    margin-bottom: 5px; /* Space between date and age */
+}
+
+.book {
+    padding-left: 10px;
+}
+
+.book img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: rgb(141, 7, 7);
+}
+
+/* Additional styles for the filters section */
+.filters {
+    border: 1px solid rgb(141, 7, 7);
+    margin-right: 20px;
+}
