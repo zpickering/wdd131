@@ -1,0 +1,97 @@
+body{
+    margin: 0 auto;
+    width: 50%;
+}
+.card{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.cardFront{
+    grid-row: 1/5;
+    grid-column: 1/4;
+    background-color: rgb(207, 207, 207);
+    z-index: 1;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+}
+.total{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: larger;
+}
+.card-image{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+}
+.number{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: larger;
+}
+#cardNumber{
+    width: 100%;
+    font-size: large;
+}
+.name{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: larger;
+}
+#cardHolder{
+    width: 100%;
+    font-size: large;
+}
+.exp-date{
+    font-size: larger;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#cardMonth{
+    width: 40%;
+    font-size: large;
+}
+#cardYear{
+    width: 40%;
+    font-size: large;
+}
+.cardBack{
+    grid-row: 2/6;
+    grid-column: 2/5;
+    background-color: rgb(207, 207, 207);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 2fr .75fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blackstrip{
+    background: black;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    height: 50%;
+}
+.cvv{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: larger;
+    align-content: center;
+}
+#cvv{
+    width: 50%;
+    font-size: large;
+}
+.submitButton{
+    grid-column: 4/5;
+    grid-row: 6/7;
+    margin: auto auto;
+}
