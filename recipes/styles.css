@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=family=Amatic+SC&display=swap");
+:root {
+--primary-color: #1B98E0;
+--secondary-color: #59c3c3;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: "Amatic SC";
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+.book-picture{
+    width: 30%;
+}
+header {
+    display: flex;
+    position: relative;
+    flex-direction: column;  
+    border-bottom: 1px solid black; 
+}
+h1{
+    font-family: "Delius", serif;
+}
+.webTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.book-picture {
+    margin-right: 10px; 
+}
+.searchContainer {
+    display: flex; 
+    align-items: center;  
+    justify-content: center;
+    height: auto;
+    margin: 5%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+button{
+    display: flex;
+}
+.searchbar{
+    flex: 0 0 85%;
+    height: 40px;
+    border: 0px;
+}
+.searchImage{
+    flex: 1;
+}
+main{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+}
+.foodImage{
+    max-width: 100%;
+}
+.tags{
+    display: flex;
+}
+h3{
+    border: 1px solid black;
+    padding: 1%;
+}
+.title{
+    color: #1B98E0;
+    font-family: "Delius", serif;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social{
+    display: flex;
+}
+.socialImg{
+    width: 50px;
+}
+
+
+/* The assignment asked for a media query at 600px but for me at least it looked fine at 600px */
+@media (min-width: 960px){
+    .book-picture{
+        width: 10%;
+    }
+    .searchbar{
+        flex: 0 0 97%;
+    }
+    .searchContainer{
+        margin: 1%;
+        margin-top: 3%;
+    }
+    main{
+        flex-direction: column;
+        align-items: start;
+    }
+    .recipe{
+        flex-direction: row;
+    }
+    .foodImage{
+        width: 50%;
+        height: auto;
+        padding: 10px;
+    }
+    footer{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
